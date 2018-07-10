@@ -1,0 +1,61 @@
+.content {
+  margin-top: 1rem;
+
+  .title {
+    display: inline-block;
+    font-size: 3.5rem;
+    margin-top: 1em;
+
+    span {
+      display: block;
+      font-weight: 200;
+    }
+  }
+
+  p {
+    @include font-size('26');
+    margin-top: 2rem;
+
+    .bx--link {
+      @include font-size('26');
+    }
+  }
+
+  ul {
+    @include font-size('20');
+    margin-top: 1rem;
+
+    .bx--link {
+      @include font-size('20');
+    }
+  }
+
+  .bx--btn {
+    margin-top: 2rem;
+  }
+
+  .anchor {
+    @include font-size('14');
+    text-align: right;
+    position: fixed;
+    right: 2rem;
+    bottom: .5rem;
+
+    .bx--link {
+      @include font-size('14');
+    }
+
+    span {
+      color: $brand-01;
+
+      &:first-child {
+        @include light-ui {
+          color: $text-02;
+        }
+
+        color: $text-01;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+applications:
+- name:    insurance-claim
+  memory:  256M
+  random-route: true

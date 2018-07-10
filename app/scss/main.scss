@@ -1,0 +1,67 @@
+$css--font-face: true;
+$font-path: 'https://unpkg.com/carbon-components@8.0.0/src/globals/fonts/';
+
+@import 'carbon-components/scss/globals/scss/styles';
+@import 'utils/temp';
+
+.container {
+  padding: 2rem 5% 1rem;
+}
+
+.header {
+
+}
+
+.intro {
+  background: linear-gradient(to top, #00A3FE, #0031BE);
+  color: white;
+}
+
+.header > a  {
+  margin-right: 2em;
+  color: white;
+  text-decoration: none;
+}
+
+.header > .homeLink {
+  margin-right: 3em;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+
+.inputContainer{
+  margin-top: 2em;
+  color: white;
+}
+
+.inputContainer input{
+  min-width: 2em;
+}
+
+.inputContainer label{
+  color: white;
+}
+
+.inputContainer label:focus{
+  color:red;
+}
+
+.inputContainer .bx--form-item{
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+}
+
+.actionContainer > button{
+  margin-right: 1em;
+}
+
+.actionContainer > .bx--btn--primary{
+  color: #3d70b2;
+  background: white;
+}
+
+.actionContainer > .bx--btn--secondary{
+  border-color: white;
+  color: white;
+}
