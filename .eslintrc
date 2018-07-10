@@ -26,6 +26,8 @@
         "allowAfterThis": true,
         "allowAfterSuper": true
       }
-    ]
+    ],
+    "indent": [2, "tab"],
+    "no-tabs": 0
   }
 }

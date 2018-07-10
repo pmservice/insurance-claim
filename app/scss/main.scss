@@ -4,8 +4,44 @@ $font-path: 'https://unpkg.com/carbon-components@8.0.0/src/globals/fonts/';
 @import 'carbon-components/scss/globals/scss/styles';
 @import 'utils/temp';
 
+$color-blue-light: #00A3FE;
+$color-blue-dark: #0031BE;
+
+.bx--body{
+  background-color: white;
+}
+
 .container {
-  padding: 2rem 5% 1rem;
+  padding: 2rem 3rem 2rem;
+}
+
+.user-container {
+  padding: 2rem 3rem 1rem;
+
+  .tabs {
+    margin-top: 1rem;
+    li {
+      font-size: 1em;
+    }
+
+    ul{
+      margin-left: 0;
+    }
+
+    .bx--tabs__nav-item--selected .bx--tabs__nav-link {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .bx--tabs__nav-item--selected .bx--tabs__nav-link  {
+        color: black;
+      }
+    }
+
+    .bx--tabs__nav-item--selected {
+      border: none;
+    }
+  }
 }
 
 .header {
@@ -13,8 +49,23 @@ $font-path: 'https://unpkg.com/carbon-components@8.0.0/src/globals/fonts/';
 }
 
 .intro {
-  background: linear-gradient(to top, #00A3FE, #0031BE);
+  background: linear-gradient(to top, $color-blue-light, $color-blue-dark);
   color: white;
+
+  a {
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    a {
+      color: black;
+    }
+  }
+
+  .policyInfoContainer >a {
+    color: white;
+    font-style: italic;
+  }
 }
 
 .header > a  {
@@ -31,7 +82,7 @@ $font-path: 'https://unpkg.com/carbon-components@8.0.0/src/globals/fonts/';
 
 
 .inputContainer{
-  margin-top: 2em;
+  margin-top: 3rem;
   color: white;
 }
 
@@ -56,12 +107,78 @@ $font-path: 'https://unpkg.com/carbon-components@8.0.0/src/globals/fonts/';
   margin-right: 1em;
 }
 
-.actionContainer > .bx--btn--primary{
-  color: #3d70b2;
-  background: white;
+.actionContainer {
+  .bx--btn--primary {
+    color: $color-blue-light;
+    background-color: white;
+  }
+
+  .bx--btn--secondary{
+    border-color: white;
+    color: white;
+  }
+
+  .bx--btn--primary:hover{
+    background-color: $color-blue-dark;
+    color: white;
+    border-color: white;
+  }
 }
 
-.actionContainer > .bx--btn--secondary{
-  border-color: white;
-  color: white;
+.info {
+  margin-bottom: 3rem;
+
+  .box {
+    border-right: 1px solid $color-blue-light;
+    min-height: 21rem;
+    background: white;
+    padding: 3rem;
+
+    button {
+      position: absolute;
+      bottom: 0px;
+    }
+
+    li {
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+  }
+
+  .bx--row {
+    margin: 0;
+  }
+
+  .box > * {
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .box {
+      border-bottom: 2px solid $color-blue-light;
+      border-right: none;
+    }
+  }
+
+  .box:last-child {
+    border: none;
+  }
+
+  h2 {
+    color: $color-blue-dark;
+  }
 }
+
+.policyInfoContainer {
+  margin-top: 2rem;
+  font-size: 1.3em;
+}
+
+.policy{
+  .bx--structured-list{
+    min-width: 100px;
+    margin-bottom: 1rem;
+  }
+}
+
