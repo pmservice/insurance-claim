@@ -74,14 +74,15 @@ $color-blue-dark: #0031BE;
 }
 
 .triangle {
-  position: relative;
+  position: fixed;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 12px solid white;
-  top: -28px;
+  top: 20.5rem;
   text-align: center;
+  z-index: 5;
 }
 
 .emptyRow{

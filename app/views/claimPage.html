@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>InSure. | Claim your insurance</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="bx--body">
+  <div class="claim-container intro">
+    <!-- Replace "getting_started" with your code -->
+    <div class="content">
+      <div class="header">
+        <a href="home.html" class="homeLink"> InSure. </a>
+        <a>Insurance</a>
+        <a>Banking</a>
+        <a>Finances</a>
+        <a>Claims</a>
+        <a>Customer Care</a>
+      </div>
+
+      <h2 id="title" class="title">
+        Let’s make a car claim!
+      </h2>
+
+      <div class="policyInfoContainer">
+        Begin making a claim by filling out the information below. </br>
+        Need help or have questions on what to fill in? <a href="home.html"> Click here! </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class=" claim-info">
+    <h2>My Claim</h2>
+    <h3>Claim #12345678910</h3>
+
+    <div class="claim-form">
+        <!-- Select case -->
+      <div class="bx--form-item">
+        <div class="bx--select bx--select--light">
+          <select id="select-event" class="bx--select-input">
+            <option class="bx--select-option" disabled selected hidden>Choose an option</option>
+            <optgroup class="bx--select-optgroup" label="Accident">
+              <option class="bx--select-option" value="option1">My Fault</option>
+              <option class="bx--select-option" value="option2">Second Driver's Fault</option>
+              <option class="bx--select-option" value="option3">3rd Party Fault</option>
+            </optgroup>
+            <optgroup class="bx--select-optgroup" label="Natural Disaster">
+              <option class="bx--select-option" value="option1">Fire</option>
+              <option class="bx--select-option" value="option2">Flood</option>
+            </optgroup>
+          </select>
+          <svg class="bx--select__arrow" width="10" height="5" viewBox="0 0 10 5">
+            <path d="M0 0l5 4.998L10 0z" fill-rule="evenodd" />
+          </svg>
+          <label for="select-event" class="bx--label">1. What happened to your vehicle?</label>
+        </div>
+      </div>
+        <!-- Event Date -->
+        <div class="bx--form-item">
+          <div data-date-picker data-date-picker-type="single" class="bx--date-picker bx--date-picker--single bx--date-picker--light">
+            <div class="bx--date-picker-container">
+              <svg data-date-picker-icon class="bx--date-picker__icon" width="14" height="16" viewBox="0 0 14 16">
+                <path d="M0 5h14v1H0V5zm3-5h1v4H3V0zm7 0h1v4h-1V0zM0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 0 14.5v-12zm1 0v12a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5z"
+                      fill-rule="nonzero" />
+              </svg>
+              <input type="text" id="date-picker-event" class="bx--date-picker__input" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy"
+                     data-date-picker-input />
+              <label for="date-picker-event" class="bx--label">2. When did this event occur?</label>
+            </div>
+          </div>
+        </div>
+        <!-- Event Location -->
+        <div class="bx--form-item">
+          <input id="text-input-event" type="text" class="bx--text-input bx--text-input--light" cols="10">
+          <label for="text-input-event" class="bx--label">3. Where did the incident occur?</label>
+        </div>
+        <!-- Select case -->
+        <div class="bx--form-item">
+          <div class="bx--select bx--select--light">
+            <select id="select-vehicleOwner" class="bx--select-input">
+              <option class="bx--select-option" disabled selected hidden>Choose an option</option>
+              <option class="bx--select-option" value="option1">My Vehicle</option>
+              <option class="bx--select-option" value="option2">Rental</option>
+              <option class="bx--select-option" value="option3">Another Owner</option>
+            </select>
+            <svg class="bx--select__arrow" width="10" height="5" viewBox="0 0 10 5">
+              <path d="M0 0l5 4.998L10 0z" fill-rule="evenodd" />
+            </svg>
+            <label for="select-vehicleOwner" class="bx--label">4. Who is the owner of vehicle?</label>
+          </div>
+        </div>
+        <!-- Event with someone-->
+        <div class="bx--form-item bx--checkbox-wrapper">
+          <input id="checkbox-someone" class="bx--checkbox" type="checkbox" value="true" name="checkbox">
+          <label for="checkbox-someone" class="bx--checkbox-label">There was someone else in my vehicle during incident.</label>
+        </div>
+        <!-- Event with injuries-->
+        <div class="bx--form-item bx--checkbox-wrapper">
+          <input id="checkbox-injuries" class="bx--checkbox" type="checkbox" value="true" name="checkbox">
+          <label for="checkbox-injuries" class="bx--checkbox-label">There were injuries. </label>
+        </div>
+        <!-- Event details-->
+        <div class="bx--form-item">
+          <textarea id="text-area-eventDetails" class="bx--text-area bx--text-area--light" rows="2" cols="50" placeholder="Please write details of event."></textarea>
+          <label for="text-area-eventDetails" class="bx--label">Would you provide details of what happened?</label>
+        </div>
+      <div class="bx--form-item">
+        <button class="bx--btn bx--btn--secondary" type="button">Submit</button>
+      </div>
+    </div>
+
+    <div class="claim-files">
+      <h2>Upload documents here!</h2>
+      <h3>
+        Attach photos and documents that
+        are pertinent to your claim.</h3>
+      <div id="status"></div>
+      <div id="drop-area" >
+        <form class="my-form">
+          <p>Drag & drop images or search
+              for files on your computer.</p>
+          <input type="file" id="fileElem" multiple accept="image/*,application/pdf" onchange="uploadHandler(this.files)">
+          <label class="bx--btn bx--btn--ghost" for="fileElem">Select some files</label>
+        </form>
+      </div>
+      <div id="list"></div>
+    </div>
+  </div>
+
+  <script src="./js/index.js "></script>
+  <script src="./js/carbon-components.min.js "></script>
+</body>
+
+</html>

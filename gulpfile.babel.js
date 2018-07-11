@@ -38,7 +38,7 @@ gulp.task('fonts', () =>
     .pipe(gulp.dest('dist/assets/fonts')),
 );
 
-gulp.task('img', () => gulp.src('app/assets/img/**.*').pipe(gulp.dest('dist/assets/img')));
+gulp.task('img', () => gulp.src('app/assets/img/**/**.*').pipe(gulp.dest('dist/assets/img')));
 
 gulp.task('styles', () =>
   gulp

@@ -1,0 +1,70 @@
+
+.claim-info{
+  top: 20rem;
+  margin: 0 3rem 0 3rem;
+}
+
+.claim-form {
+  width: 70%;
+  padding-right: 10rem;
+  margin-top: 2rem;
+
+  .bx--form-item{
+    margin-bottom: 2rem;
+  }
+
+  .bx--label{
+    color: $color-blue-dark;
+    font-weight: 400;
+  }
+
+  .bx--text-input, .bx--text-area, .bx--select-input{
+    //box-shadow: 0 1px 0 0 $color-blue-dark;
+    -ms-flex-order: 2;
+  }
+
+  .bx--date-picker__input, .bx--select-input{
+    min-width: 300px;
+  }
+
+  .bx--text-input, .bx--text-area {
+    width: 300px;
+  }
+}
+
+.claim-files{
+  width: 30%;
+  position: fixed;
+  top: 21em;
+  right: 0;
+  padding: 0 3rem 3rem 3rem;
+  border-left: 1px solid $color-blue-light;
+}
+
+
+@media (max-width: 1400px) {
+
+  .claim-form {
+    width: 60%;
+    padding-right: 3rem;
+    margin-top: 2rem;
+  }
+  .claim-files{
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .claim-form {
+    width: 100%;
+    padding-right: 3rem;
+    margin-top: 2rem;
+  }
+  .claim-files{
+    width: 100%;
+    position: static;
+    padding: 1rem 0 1rem 0;
+    border: none;
+  }
+}

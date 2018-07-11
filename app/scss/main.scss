@@ -3,6 +3,9 @@ $font-path: 'https://unpkg.com/carbon-components@8.0.0/src/globals/fonts/';
 
 @import 'carbon-components/scss/globals/scss/styles';
 @import 'utils/temp';
+@import 'utils/filedrop';
+@import 'utils/policy';
+@import 'utils/claim';
 
 $color-blue-light: #00A3FE;
 $color-blue-dark: #0031BE;
@@ -15,8 +18,11 @@ $color-blue-dark: #0031BE;
   padding: 2rem 3rem 2rem;
 }
 
-.user-container {
+.user-container, .claim-container  {
   padding: 2rem 3rem 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 
   .tabs {
     margin-top: 1rem;
@@ -44,9 +50,6 @@ $color-blue-dark: #0031BE;
   }
 }
 
-.header {
-
-}
 
 .intro {
   background: linear-gradient(to top, $color-blue-light, $color-blue-dark);
@@ -125,7 +128,7 @@ $color-blue-dark: #0031BE;
   }
 }
 
-.info {
+.info, .policy-info, .claim-info  {
   margin-bottom: 3rem;
 
   .box {
@@ -167,18 +170,6 @@ $color-blue-dark: #0031BE;
 
   h2 {
     color: $color-blue-dark;
-  }
-}
-
-.policyInfoContainer {
-  margin-top: 2rem;
-  font-size: 1.3em;
-}
-
-.policy{
-  .bx--structured-list{
-    min-width: 100px;
-    margin-bottom: 1rem;
   }
 }
 
